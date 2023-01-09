@@ -1,0 +1,101 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0;           /*Cria um espaçamento interno(margem) de 20px para cima e para baixo*/
+
+}
+
+.caixa {
+    position: relative;        /*Faz com que o bloco nav absolute deixe de fixar posicionado em relação a pagina e sim ao bloco*/
+    width: 940px;              /*Largura fixa de 940px*/
+    margin: 0 auto;            /*Cria um espaçamento externo(margem) para cima/baixo de 0 e esq/dir seja calculado automaticamente*/
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;     /**/
+    margin: 0 0 0 15px;  /*Cria um espaçamento para a esquerda entre os itens*/
+}
+
+nav a {
+    text-transform: uppercase;  /*Deixa as letras em maisculo*/
+    color: #000000;           /*Muda a cor da fonte para preto*/
+    font-weight: bold;          /*Deixa a fonte em negrito*/
+    font-size: 22px;            /*fonte para tamanho 22*/
+    text-decoration: none;      /*retira o sublinhado*/
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;    
+}
+
+.produtos {
+    width: 940px;              /*Largura fixa de 940px*/
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;        /*Centraliza os elementos*/
+    width: 30%;                /*Faz com que cada bloco tenha 30 de largura em relação a pagina*/
+    vertical-align: top;       /*Alinha os elementos de cada bloco pelo topo*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;    /*Faz com que cada bloco tenha os 30% de largura definido pelo width fixo*/
+                               /*Isso faz com que os 20px de espaçamento interno estejam dentro desse 30%*/
+
+    /*
+      border-color: #000000;
+      border-width: 2px;
+      border-style: solid;
+    */
+
+    border: 2px solid #000000;  /*Define tamnaho (espessura), tipo e cor da borda, essa linha resume as tres acima*/
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border-color: #088C19;    
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;    
+}
